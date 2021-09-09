@@ -1,0 +1,15 @@
+.header-item:hover{
+    transition: 0.5s;
+    text-shadow: 1px 1px 5px white;
+}
+
+.header-item:not(:hover) {
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px white;
+    transition: 0.5s;
+}
+
+button:not(:hover){ transition: 0.5s; }
