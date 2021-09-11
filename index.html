@@ -18,15 +18,18 @@
     />
 
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="./src/style.css"
-        media="screen"
-    />
-    
 
     <title>Assistant</title>
+
+    <style>
+        @font-face {
+            font-family: "bioweapon";
+            src: url("src/fonts/BIOWEAPON.ttf");
+        }
+        .head-org-name {
+            font-family: bioweapon;
+        }
+    </style>
 </head>
 
 
@@ -34,14 +37,14 @@
     <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <img src="src/images/ha_logo.png" width=32px/>
-            <span class="ml-3 text-xl">HA - Assistant</span>
+            <span class="head-org-name ml-3 text-sm">HA - Assistant</span>
           </a>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-            <a class="header-item mr-5 hover:text-white" href="https://hackarmour.tech">Hack Armour</a>
-            <a class="header-item mr-5 hover:text-white" href="mailto:staff@hackarmour.tech">Contact</a>
+            <a class="transition hover:500 mr-5 hover:text-white" href="https://hackarmour.tech">Hack Armour</a>
+            <a class="transition hover:500 mr-5 hover:text-white" href="mailto:staff@hackarmour.tech">Contact</a>
           </nav>
           <a href="https://discord.com/oauth2/authorize?client_id=845154524997877770&permissions=-9&scope=bot">
-          <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Invite
+          <button class="inline-flex transition duration-500 ease-in-out items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white shadow-2xl mt-4 md:mt-0">Invite
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -58,7 +61,7 @@
             <p class="mb-8 leading-relaxed">A Fun bot having everything you need as a Discord Moderator!</p>
             <div class="flex justify-center">
               <a href="https://top.gg/bot/845154524997877770">
-                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Top.gg</button>
+                <button class="inline-flex shadow-2xl transition duration-500 ease-in-out text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-900 rounded text-lg">Top.gg</button>
               </a>
             </div>
           </div>
