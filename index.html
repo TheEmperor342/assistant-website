@@ -22,12 +22,31 @@
     <title>Assistant</title>
 
     <style>
+        html {
+            background-color: #111827;
+        }
         @font-face {
             font-family: "bioweapon";
             src: url("src/fonts/BIOWEAPON.ttf");
         }
         .head-org-name {
             font-family: bioweapon;
+            color: white;
+            text-shadow: 1px 1px 5px black;
+        }
+        #blob {
+            background-repeat: no-repeat;
+            background-image: url("src/blobs/blob.svg");
+        }
+        /* header {
+            background-image: url("src/blobs/peaks.svg");
+            background-repeat: no-repeat;
+        } */
+        @media only screen and (max-width: 700px) {
+            #blob {
+                background-image: url("src/blobs/blob-mobile.svg");
+                background-repeat: no-repeat;
+            }
         }
     </style>
 </head>
@@ -36,12 +55,9 @@
 <body>
     <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <img src="src/images/ha_logo.png" width=32px/>
-            <span class="head-org-name ml-3 text-sm">HA - Assistant</span>
-          </a>
+            <img src="src/images/ha_logo.svg" width=32px/>
+            <a href="https://www.hackarmour.tech"><span class="head-org-name ml-3 text-sm">HA - Assistant</span></a>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-            <a class="transition hover:500 mr-5 hover:text-white" href="https://hackarmour.tech">Hack Armour</a>
-            <a class="transition hover:500 mr-5 hover:text-white" href="mailto:staff@hackarmour.tech">Contact</a>
           </nav>
           <a href="https://discord.com/oauth2/authorize?client_id=845154524997877770&permissions=-9&scope=bot">
           <button class="inline-flex transition duration-500 ease-in-out items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white shadow-2xl mt-4 md:mt-0">Invite
@@ -54,7 +70,7 @@
 
 
     <section class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" id="blob">
           <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">One Bot - All Needs
             </h1>
@@ -81,10 +97,13 @@
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
             <a class="ml-3 text-gray-400" href="https://www.github.com/hackarmour">
-                <img src="src/images/github.png" width=32px/>
+                <img src="https://cdn.discordapp.com/attachments/874232670329122846/886227148644433960/p-replace-color.png" width=32px/>
             </a>
             <a class="ml-3 text-gray-400" href="https://discord.gg/mxHtj8q3c4">
-                <img src="src/images/discord.png" width=32px/>
+                <img src="https://cdn.discordapp.com/attachments/874232670329122846/886226587928911942/p-replace-color_1.png" width=32px/>
+            </a>
+            <a class="ml-3 text-gray-400" href="mailto: staff@hackarmour.tech">
+              <img src="https://cdn.discordapp.com/attachments/874232670329122846/886229325752434688/p-replace-color.png" width=32px/>
             </a>
           </span>
         </div>
