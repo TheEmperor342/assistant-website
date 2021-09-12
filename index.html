@@ -36,17 +36,23 @@
         }
         #blob {
             background-repeat: no-repeat;
-            background-image: url("src/blobs/blob.svg");
+            background-image: url("src/blobs/blob.gif");
+			background-size: 350px 350px;
+			background-position: 300px 75px;
         }
         /* header {
             background-image: url("src/blobs/peaks.svg");
             background-repeat: no-repeat;
         } */
         @media only screen and (max-width: 700px) {
-            #blob {
+            /* #blob {
                 background-image: url("src/blobs/blob-mobile.svg");
                 background-repeat: no-repeat;
-            }
+            } */
+			#blob {
+				background-position: 50px;
+				background-size: 350px 350px;
+			}
         }
     </style>
 </head>
@@ -56,10 +62,10 @@
     <header class="text-gray-400 bg-gray-900 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <img src="src/images/ha_logo.svg" width=32px/>
-            <a href="https://www.hackarmour.tech"><span class="head-org-name ml-3 text-sm">HA - Assistant</span></a>
+            <a href="https://assistant.hackarmour.tech"><span class="head-org-name ml-3 text-sm">HA - Assistant</span></a>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
           </nav>
-          <a href="https://discord.com/oauth2/authorize?client_id=845154524997877770&permissions=-9&scope=bot">
+          <a href="https://dsc.gg/invite-assistant">
           <button class="inline-flex transition duration-500 ease-in-out items-center bg-red-500 border-0 py-1 px-3 focus:outline-none hover:bg-red-700 rounded text-white shadow-2xl mt-4 md:mt-0">Invite
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -89,7 +95,7 @@
 
       <footer class="text-gray-400 bg-gray-900 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white" href="https://www.hackarmour.tech">
             <img src="src/images/ha_logo.png" width=32px/>
             <span class="ml-3 text-xl">HackArmour</span>
           </a>
